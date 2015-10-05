@@ -1,0 +1,4 @@
+Pascal eXtended Library (PXL) is a cross-platform framework for developing 2D/3D video games, interactive and scientific applications. It aids the developer with mathematics, hardware control, resource management, displaying real-time graphics and text, handle user input and network communication capabilities.
+
+This library requires Embarcadero Delphi XE 8+ or FreePascal 3+ / Lazarus 1.4+, supporting many platforms such as Windows, Linux, Mac OS X and Android among others.
+Many singleboard devices including but not limited to Raspberry PI, Intel Galileo and BeagleBone Black are natively supported, in addition to several external display drivers and sensors.
