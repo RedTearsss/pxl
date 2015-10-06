@@ -573,10 +573,10 @@ type
   begin
     TempY := (Y - 16) * 298;
 
-    PIntColorRec(Result).Red := Saturate((TempY + 409 * (U - 128) + 128) div 256, 0, 255);
-    PIntColorRec(Result).Green := Saturate((TempY - 100 * (U - 128) - 208 * (V - 128) + 128) div 256, 0, 255);
-    PIntColorRec(Result).Blue := Saturate((TempY + 516 * (U - 128) + 128) div 256, 0, 255);
-    PIntColorRec(Result).Alpha := 255;
+    TIntColorRec(Result).Red := Saturate((TempY + 409 * (U - 128) + 128) div 256, 0, 255);
+    TIntColorRec(Result).Green := Saturate((TempY - 100 * (U - 128) - 208 * (V - 128) + 128) div 256, 0, 255);
+    TIntColorRec(Result).Blue := Saturate((TempY + 516 * (U - 128) + 128) div 256, 0, 255);
+    TIntColorRec(Result).Alpha := 255;
   end;
 
   procedure PixelToColors(SrcPixel: PPixelYUYV; var DestPixels: PIntColor); inline;
